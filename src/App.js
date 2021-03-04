@@ -5,6 +5,7 @@ import { Routes, Route } from 'react-router-dom';
 import { CardHome } from './cardhome';
 import { CardAdd } from './cardadd';
 import { CardEdit } from './cardedit';
+import { Link } from 'react-router-dom'
 
 
 
@@ -13,8 +14,16 @@ import { CardEdit } from './cardedit';
 function App() {
   return (
     <div className="App">
+       <nav>
+       <Link to="/home">Списак</Link>
+        <Link to="/add">Додај картицу</Link>
+        <Link to="/edit">Измени податке</Link>
+        
+			</nav>
+     
+
       <Routes>
-        <Route path="/" element={<CardHome />}/>
+        <Route path="/home" element={<CardHome />}/>
         <Route path="/add" element={<CardAdd />}/>
         <Route path="/edit" element={<CardEdit />} />
       </Routes>
