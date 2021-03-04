@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Cards from "react-credit-cards";
 import "react-credit-cards/es/styles-compiled.css";
-import { Link } from 'react-router-dom'
+//import  writelc from "./localst"
 
 export function CardAdd() {
 	const [data, setData] = useState({
@@ -19,6 +19,8 @@ export function CardAdd() {
 
 	return (
 		<div id="PaymentForm">
+
+
 			<Cards
 				cvc={data.cvc}
 				expiry={data.expiry}
@@ -51,6 +53,14 @@ export function CardAdd() {
 					placeholder="Број картице без размака"
 					onChange={handleInputChange}
 				/>
+		
+			
+			
+              <button>
+                Потврди
+              </button>
+              
+            
 			</form>
 		</div>
 	);

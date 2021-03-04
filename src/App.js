@@ -15,9 +15,9 @@ function App() {
   return (
     <div className="App">
        <nav>
-       <Link to="/home">Списак</Link>
-        <Link to="/add">Додај картицу</Link>
-        <Link to="/edit">Измени податке</Link>
+       <Link to="/home">Списак </Link>  
+        <Link to="/add">Додај картицу </Link>
+        <Link to="/edit">Измени податке </Link>
         
 			</nav>
      
