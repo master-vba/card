@@ -1,3 +1,3 @@
 # card
 
-See MASTER 
+See MASTER branch!
